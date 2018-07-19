@@ -16,7 +16,7 @@ class School
     @grade = grade
 
     if @roster.each {|k,v| k == [grade]}
-    @roster[grade] << name
+      @roster[grade] << name
     else
       @roster[grade] = []
       @roster[grade] << name
