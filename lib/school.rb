@@ -24,8 +24,6 @@ class School
   def add_student(name, grade)
     @name = name
     @grade = grade
-    
-    # roster
 
     if @roster.each {|k,v| k == [grade]}
     @roster[grade] << name
