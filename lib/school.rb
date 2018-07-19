@@ -47,9 +47,7 @@ class School
       sorted = v.sort
       @roster[k] = sorted
     end 
-  
   end 
-end 
  
 end 
 
