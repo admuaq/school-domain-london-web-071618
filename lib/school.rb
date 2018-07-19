@@ -10,16 +10,6 @@ class School
     @roster = roster
   end 
   
-  def add_student(name, grade)
-    @name = name 
-    @grade = grade
-    
-    if @roster.has_key?(grade)
-
-  # def roster
-  #   @roster = {}
-  # end 
-  
   
   def add_student(name, grade)
     @name = name
