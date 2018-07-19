@@ -17,7 +17,7 @@ class School
     #binding.pry
 
     if @roster.has_key?(grade)
-      binding.pry
+      # binding.pry
       @roster[grade] << name
     else
       @roster[grade] = []
