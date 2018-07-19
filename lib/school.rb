@@ -16,7 +16,7 @@ class School
 
     #binding.pry
 
-    if @roster.each {|k,v| k == [grade]}
+    if @roster.has_key?(grade)
       binding.pry
       @roster[grade] << name
     else
