@@ -10,16 +10,32 @@ class School
     @roster = roster
   end 
   
+<<<<<<< HEAD
   def add_student(name, grade)
     @name = name 
     @grade = grade
     
     if @roster.has_key?(grade)
+=======
+  # def roster
+  #   @roster = {}
+  # end 
+  
+  
+  def add_student(name, grade)
+    @name = name
+    @grade = grade
+    
+    # roster
+
+    if @roster.each {|k,v| k == [grade]}
+>>>>>>> c8f219191a0edf39865092b5037e6af0b3ab1624
     @roster[grade] << name
     else
       @roster[grade] = []
       @roster[grade] << name
     end 
+<<<<<<< HEAD
   end 
  
   def grade(num)
@@ -39,3 +55,24 @@ class School
   
   end 
 end 
+=======
+    # binding.pry
+
+    # @roster
+    #binding.pry
+  end 
+ 
+end 
+
+school = School.new("Bayside High School")
+
+# school.add_student("Zach Morris", 9)
+# school.add_student("AC Slater", 9)
+# school.add_student("Kelly Kapowski", 10)
+# school.add_student("Screech", 11)
+# school.roster
+
+# binding.pry
+
+#puts "asdasd"
+>>>>>>> c8f219191a0edf39865092b5037e6af0b3ab1624
