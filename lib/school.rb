@@ -10,10 +10,11 @@ class School
     @roster = roster
   end 
   
-  
   def add_student(name, grade)
     @name = name
     @grade = grade
+
+    binding.pry
 
     if @roster.each {|k,v| k == [grade]}
       @roster[grade] << name
