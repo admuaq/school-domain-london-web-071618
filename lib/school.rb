@@ -50,11 +50,6 @@ class School
   
   end 
 end 
-    # binding.pry
-
-    # @roster
-    #binding.pry
-  end 
  
 end 
 
