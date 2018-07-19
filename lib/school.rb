@@ -28,7 +28,6 @@ class School
     # roster
 
     if @roster.each {|k,v| k == [grade]}
-
     @roster[grade] << name
     else
       @roster[grade] = []
