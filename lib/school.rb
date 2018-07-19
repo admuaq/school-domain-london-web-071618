@@ -16,12 +16,12 @@ class School
 
     #binding.pry
 
-    # if @roster.each {|k,v| k == [grade]}
-    #   @roster[grade] << name
-    # else
+    if @roster.each {|k,v| k == [grade]}
+      @roster[grade] << name
+    else
       @roster[grade] = []
       @roster[grade] << name
-    # end 
+    end 
   end 
  
   def grade(num)
