@@ -14,7 +14,7 @@ class School
     @name = name
     @grade = grade
 
-    binding.pry
+    #binding.pry
 
     if @roster.each {|k,v| k == [grade]}
       @roster[grade] << name
